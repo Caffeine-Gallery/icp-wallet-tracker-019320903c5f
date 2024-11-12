@@ -1,0 +1,8 @@
+type WalletData = 
+ record {
+   count: nat;
+   timestamp: int;
+ };
+service : {
+  getWalletData: () -> (vec WalletData) query;
+}
